@@ -1,0 +1,22 @@
+import java.util.*;
+class factorial
+{
+	public static void main(String args[])
+	{
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int factor=1;
+		int count=0;
+		for(int i=1;i<=n;i++)
+		{
+			factor*=i;
+		}
+		System.out.println(factor);
+		while(factor%10==0)
+		{
+			count++;
+			factor/=10;
+		}
+		System.out.println(count);
+	}
+}
